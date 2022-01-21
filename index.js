@@ -1,10 +1,20 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  const empty = []
+  for(let i = 0; i < word.length + 1; i++){
+    empty.push(word[word.length-i])
+    
+  }
+  const newEmpty = empty.join("")
+  if (newEmpty === word){
+    return true
+  } 
+  return false
 }
 
 /* 
-  Add your pseudocode here
+  Add your pseudocode here\
 */
+
 
 /*
   Add written explanation of your solution here
